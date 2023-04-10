@@ -1,6 +1,6 @@
 function Image(img)
-  if img.classes:find('additionc4',1) then
-    local f = io.open("additionc4/" .. img.src, 'r')
+  if img.classes:find('visualide',1) then
+    local f = io.open("TheParadoxNotes/" .. img.src, 'r')
     local doc = pandoc.read(f:read('*a'))
     f:close()
     local caption = pandoc.utils.stringify(doc.meta.caption) or "No Caption Found"
