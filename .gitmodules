@@ -19,3 +19,7 @@
 [submodule "bibliography"]
 	path = bibliography
 	url = https://github.com/pibook/bibliography.git
+[submodule "TheParadoxNotes"]
+	path = TheParadoxNotes
+	url = https://github.com/TheTimeParadox/TheParadoxNotes.git
+	branch = main
