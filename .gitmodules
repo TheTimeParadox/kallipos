@@ -11,10 +11,10 @@
 	url = https://github.com/pibook/_gallery
 [submodule "images"]
 	path = images
-	url = https://github.com/pibook/images
+	url = https://github.com/TheTimeParadox/images
 [submodule "text"]
 	path = text
-	url = https://github.com/mibook/text.git
+	url = https://github.com/TheTimeParadox/text.git
 	branch = main
 [submodule "bibliography"]
 	path = bibliography
