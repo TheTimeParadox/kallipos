@@ -1,6 +1,6 @@
 #!/bin/sh
 #assemble and preprocess all the sources files
-echo " Starting convertion of chapters to .tex format "
+echo " Starting convertion of chapters to .html format "
 
 pandoc text/pre.txt --lua-filter=epigraph.lua --to markdown | pandoc --top-level-division=chapter --to html > html/pre.html
 
@@ -23,8 +23,8 @@ done
 
 echo " Converting to html... "
 
-pandoc -s html/*.html -o book.html
+pandoc -s  html/*.html -o book.html --metadata title="Ο Προγραμματισμός της Διάδρασης"  
 
-pandoc -N --quiet book.tex -f latex -t html -s -o book.html
+pandoc -N --quiet -s book.html -f html -t html -s -o book.html --metadata title="Ο Προγραμματισμός της Διάδρασης"
 
 echo " Done converting to html."
